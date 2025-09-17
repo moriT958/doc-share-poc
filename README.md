@@ -99,6 +99,9 @@ go run main.go
 
 ```bash
 npm run dev
+# or 一回ビルドする
+npm run build
+make serve
 ```
 
 フロントエンドは `http://localhost:5173` で起動します
