@@ -10,8 +10,6 @@ func main() {
 	hub := internal.NewHub()
 	go hub.Start()
 
-	http.HandleFunc("/", internal.ServeHome)
-	http.Handle("/web/", http.StripPrefix("/web/", http.FileServer(http.Dir("web"))))
 	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
 		internal.ServeWS(hub, w, r)
 	})
