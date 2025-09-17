@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>リアルタイムMarkdownエディター</title>
+    <link rel="stylesheet" href="/web/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="margin: 0; font-size: 18px">リアルタイムMarkdownエディター</h1>
+      <div id="status" class="status disconnected">接続中...</div>
+    </div>
+    <div class="main-container">
+      <div class="editor-container">
+        <div class="pane-header">Markdownエディター</div>
+        <textarea
+          id="editor"
+          placeholder="Markdownを入力してください..."
+        ></textarea>
+        <div id="cursor-overlay" class="cursor-overlay"></div>
+      </div>
+      <div class="preview-container">
+        <div class="pane-header">プレビュー</div>
+        <div id="preview"></div>
+      </div>
+    </div>
+
+    <script src="/web/main.js"></script>
+  </body>
+</html>
