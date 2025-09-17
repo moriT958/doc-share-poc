@@ -1,114 +1,114 @@
 body {
-	font-family:
-		-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	overflow: hidden;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 .header {
-	padding: 10px 20px;
-	background-color: #f8f9fa;
-	border-bottom: 1px solid #ddd;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main-container {
-	display: flex;
-	height: calc(100vh - 60px);
+    display: flex;
+    height: calc(100vh - 60px);
 }
 .editor-container {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	border-right: 2px solid #ddd;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 2px solid #ddd;
 }
 .preview-container {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	background-color: #fafafa;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
 }
 .pane-header {
-	padding: 8px 12px;
-	background-color: #e9ecef;
-	border-bottom: 1px solid #ddd;
-	font-weight: bold;
-	font-size: 14px;
+    padding: 8px 12px;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    font-size: 14px;
 }
 #editor {
-	flex: 1;
-	width: 100%;
-	padding: 10px;
-	border: none;
-	resize: none;
-	font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
-	font-size: 14px;
-	line-height: 1.5;
-	outline: none;
-	background-color: #fff;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    resize: none;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    outline: none;
+    background-color: #fff;
 }
 #preview {
-	flex: 1;
-	padding: 20px;
-	overflow-y: auto;
-	background-color: #fff;
-	margin: 10px;
-	border-radius: 4px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .cursor-overlay {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	pointer-events: none;
-	z-index: 2;
-	font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
-	white-space: pre;
-	line-height: 1.5;
-	font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    z-index: 2;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+    white-space: pre;
+    line-height: 1.5;
+    font-size: 14px;
 }
 .cursor {
-	position: absolute;
-	width: 2px;
-	height: 20px;
-	animation: blink 1s infinite;
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    animation: blink 1s infinite;
 }
 .cursor-label {
-	position: absolute;
-	top: -25px;
-	left: -5px;
-	padding: 2px 6px;
-	border-radius: 3px;
-	font-size: 11px;
-	color: white;
-	white-space: nowrap;
+    position: absolute;
+    top: -25px;
+    left: -5px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: white;
+    white-space: nowrap;
 }
 @keyframes blink {
-	0%,
-	50% {
-		opacity: 1;
-	}
-	51%,
-	100% {
-		opacity: 0;
-	}
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 .status {
-	padding: 4px 12px;
-	border-radius: 4px;
-	font-size: 12px;
-	font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
 }
 .connected {
-	background-color: #d4edda;
-	color: #155724;
+    background-color: #d4edda;
+    color: #155724;
 }
 .disconnected {
-	background-color: #f8d7da;
-	color: #721c24;
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
 /* Markdownスタイル */
@@ -118,81 +118,81 @@ body {
 #preview h4,
 #preview h5,
 #preview h6 {
-	margin-top: 24px;
-	margin-bottom: 12px;
-	line-height: 1.25;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    line-height: 1.25;
 }
 #preview h1 {
-	font-size: 2em;
+    font-size: 2em;
 }
 #preview h2 {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
 #preview h3 {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 #preview p {
-	margin-bottom: 16px;
-	line-height: 1.6;
+    margin-bottom: 16px;
+    line-height: 1.6;
 }
 #preview code {
-	background-color: #f6f8fa;
-	padding: 2px 4px;
-	border-radius: 3px;
-	font-family: "Monaco", "Menlo", monospace;
-	font-size: 0.9em;
+    background-color: #f6f8fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: "Monaco", "Menlo", monospace;
+    font-size: 0.9em;
 }
 #preview pre {
-	background-color: #f6f8fa;
-	padding: 16px;
-	border-radius: 6px;
-	overflow-x: auto;
-	line-height: 1.4;
+    background-color: #f6f8fa;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    line-height: 1.4;
 }
 #preview pre code {
-	background-color: transparent;
-	padding: 0;
+    background-color: transparent;
+    padding: 0;
 }
 #preview blockquote {
-	border-left: 4px solid #dfe2e5;
-	padding-left: 16px;
-	margin: 16px 0;
-	color: #6a737d;
+    border-left: 4px solid #dfe2e5;
+    padding-left: 16px;
+    margin: 16px 0;
+    color: #6a737d;
 }
 #preview table {
-	border-collapse: collapse;
-	width: 100%;
-	margin: 16px 0;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
 }
 #preview th,
 #preview td {
-	border: 1px solid #dfe2e5;
-	padding: 8px 12px;
-	text-align: left;
+    border: 1px solid #dfe2e5;
+    padding: 8px 12px;
+    text-align: left;
 }
 #preview th {
-	background-color: #f6f8fa;
-	font-weight: 600;
+    background-color: #f6f8fa;
+    font-weight: 600;
 }
 #preview ul,
 #preview ol {
-	padding-left: 20px;
-	margin-bottom: 16px;
+    padding-left: 20px;
+    margin-bottom: 16px;
 }
 #preview li {
-	margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
-	.main-container {
-		flex-direction: column;
-	}
-	.editor-container {
-		border-right: none;
-		border-bottom: 2px solid #ddd;
-	}
-	.preview-container {
-		max-height: 50vh;
-	}
+    .main-container {
+        flex-direction: column;
+    }
+    .editor-container {
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+    }
+    .preview-container {
+        max-height: 50vh;
+    }
 }
